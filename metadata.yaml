@@ -1,0 +1,11 @@
+display_name: Custom dialer routing extension
+type: customdialrouting
+
+description: |
+  An extension to dial connections via a specific network interface.
+  
+status:
+  class: extension
+  stability:
+    development: [extension]
+  distributions: []
