@@ -16,6 +16,6 @@ func createDefaultConfig() component.Config {
 	return &Config{}
 }
 
-func createExtension(ctx context.Context, settings extension.Settings, config component.Config) (extension.Extension, error) {
-	return customDialer{cfg: config.(*Config)}, nil
+func createExtension(_ context.Context, _ extension.Settings, config component.Config) (extension.Extension, error) {
+	return &customDialer{cfg: config.(*Config)}, nil
 }
